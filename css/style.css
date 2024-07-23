@@ -1,0 +1,131 @@
+/* Reset styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+  html, body {
+	height: auto;
+  }
+
+  body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	position: relative;
+	background: url('../img/bj.png') no-repeat center center;
+	background-size: cover;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	backdrop-filter: blur(7px); /* 设置背景模糊 */
+	-webkit-backdrop-filter: blur(7px); /* 兼容Webkit内核浏览器 */
+  }
+  .container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 10px;
+  }
+  
+  header {
+	padding: 10px 0;
+	text-align: center;
+	font-size:15px;
+	font-weight: 750;
+	margin-bottom:15px;
+	font-family: Helvetica, sans-serif;
+	text-transform:uppercase;
+    text-shadow:5px 5px 8px #FF0000;
+	color:#FFD586;
+  }
+  
+  header h1 {
+	font-size: 4em;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-bottom: 10px;
+  }
+  
+  section {
+	padding: 20px 0;
+  }
+  
+  section h2 {
+	font-size: 2em;
+	margin-bottom: 10px;
+  }
+  
+  .projects-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 20px;
+  }
+  
+  .project {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .project h3 {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+  }
+  .project h2 {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+  }
+  .project a {
+	font-size: 15px;
+	margin-bottom: 10px;
+	padding: 20px;
+  }
+  .btn {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+	margin: 10px 0; /* 设置按钮的上下间距 */
+  }
+  
+  .btn:hover {
+	background-color: #555;
+  }
+  
+
+  footer {
+	bottom: 0;
+	color: #fff;
+	text-align: center;
+	padding: 8px 20px;
+	border-radius: 15px;
+	margin-top: 20px;
+  }
+
+  .copyright-container {
+	padding: 20px;
+	background-color: rgba(51, 51, 51, 0.8);
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+  }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  
+}
+main {
+	flex: 1;
+	padding: 40px 0;
+  }
+  @media (max-width: 768px) {
+	header h1 {
+	  font-size: 2em;
+	}
+  }
+  
