@@ -139,4 +139,17 @@
 	  font-size: 2em;
 	}
   }
-  
+          .beian-link {
+            color: #FAEBD7;
+            text-decoration: none;
+            font-size: 15pt;
+            margin-left: 15px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        
+        .beian-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            text-decoration: underline;
+        }
