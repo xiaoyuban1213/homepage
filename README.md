@@ -6,10 +6,7 @@
 
 ## 在线访问
 
-| 方式 | 地址 |
-| --- | --- |
-| 主站 | <https://www.yuban.cloud/> |
-| GitHub Pages | <https://xiaoyuban1213.github.io/homepage/> |
+<https://www.yuban.cloud/>
 
 ## 站点入口
 
@@ -48,8 +45,6 @@
 │   ├── bj.png              # 背景原图（兜底）
 │   ├── bj.webp             # 背景 WebP（首选）
 │   └── og-cover.jpg        # 社交分享封面 1200×630
-├── .github/workflows/
-│   └── static.yml          # GitHub Pages 自动部署
 └── LICENSE
 ```
 
@@ -62,35 +57,6 @@ npx serve .
 ```
 
 打开 <http://127.0.0.1:8765/> 即可。因为是纯静态页面，直接双击 `index.html` 也能看，但用本地服务更接近线上环境。
-
-## 部署
-
-### GitHub Pages
-
-推送到 `main` 分支后，`.github/workflows/static.yml` 会自动把整个仓库发布到 GitHub Pages。
-
-### 宝塔面板（手动）
-
-需要上传到网站根目录的文件：
-
-```
-index.html  404.html  robots.txt  sitemap.xml  favicon.ico  LICENSE
-css/  js/  img/
-```
-
-部署注意事项：
-
-- **不要**把 `.git/` 放进 Web 根目录，否则源码可被直接下载；如站点根目录曾存在，务必删除
-- `.well-known/` 是 SSL 证书签发/续期的验证目录，**不要删**
-- `.user.ini`、`.htaccess` 由面板生成，按需保留
-- 建议在 nginx 中加一层防护：
-
-  ```nginx
-  location ~ /\.(git|github|gitattributes|htaccess|user\.ini) {
-      deny all;
-      return 404;
-  }
-  ```
 
 ## 维护备忘
 
