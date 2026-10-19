@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 - 页面未找到</title>
+    <meta name="robots" content="noindex,follow">
+    <meta name="theme-color" content="#f7f7f7">
+    <link rel="icon" href="/favicon.ico" sizes="any">
     <style>
         body, html {
             height: 100%;
@@ -19,12 +22,14 @@
             align-items: center;
             height: 100%;
             text-align: center;
+            padding: 0 20px;
         }
 
         h1 {
             font-size: 150px;
             color: #333;
             margin-bottom: 20px;
+            line-height: 1;
         }
 
         p {
@@ -46,6 +51,16 @@
 
         .btn:hover {
             background-color: #0056b3;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 90px;
+            }
+
+            p {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
