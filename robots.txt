@@ -1,0 +1,35 @@
+User-agent: *
+Allow: /
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /.well-known/
+Disallow: /.htaccess
+Disallow: /.user.ini
+Disallow: /*.php$
+Disallow: /*.php?
+Disallow: /xmlrpc.php
+Disallow: /wp-login.php
+Disallow: /wp-admin/
+Disallow: /admin/
+Disallow: /backup/
+Disallow: /config/
+Disallow: /debug.php
+Disallow: /phpinfo.php
+Disallow: /info.php
+Disallow: /test.php
+Disallow: /shell
+Disallow: /cmd
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: MJ12bot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+Sitemap: https://www.yuban.cloud/sitemap.xml
