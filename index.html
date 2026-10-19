@@ -1,9 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>御坂の个人首页</title>
+
+  <!-- SEO -->
+  <meta name="description" content="御坂の个人首页 - 一个无聊大学生的个人导航页，提供高考倒计时、春节倒计时、Minecraft 服务器 Motd 查询、雨云监控等在线工具">
+  <meta name="keywords" content="御坂,个人首页,导航页,高考倒计时,春节倒计时,Minecraft,Motd查询,雨云监控,在线工具">
+  <meta name="author" content="御坂网络">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#333333">
+  <link rel="canonical" href="https://www.yuban.cloud/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+
+  <!-- Open Graph（Telegram / 微信 / QQ 分享卡片） -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="御坂の个人首页">
+  <meta property="og:title" content="御坂の个人首页">
+  <meta property="og:description" content="一个无聊大学生的个人导航页，提供高考倒计时、春节倒计时、Minecraft 服务器 Motd 查询、雨云监控等在线工具">
+  <meta property="og:url" content="https://www.yuban.cloud/">
+  <meta property="og:image" content="https://www.yuban.cloud/img/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="御坂の个人首页">
+  <meta name="twitter:description" content="一个无聊大学生的个人导航页，提供高考倒计时、春节倒计时、Minecraft 服务器 Motd 查询、雨云监控等在线工具">
+  <meta name="twitter:image" content="https://www.yuban.cloud/img/og-cover.jpg">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -33,12 +60,14 @@
             <h3>网站列表&联系方式</h3>
             <p>这里是我目前正在运营的网站，以及我的一些联系方式。你可以点击下面的按钮访问。</p>
             <div class="button-container">
-              <a href="https://cny.yuban.cloud/" class="btn" target="_blank">春节倒计时</a>
-              <a href="https://gk.yuban.cloud/" class="btn" target="_blank">高考倒计时</a>
-              <a href="https://github.com/xiaoyuban1213" class="btn" target="_blank">我的GitHub</a>
-              <a href="https://t.me/Yuban_NetWork" class="btn" target="_blank">telegram频道</a>
-              <a href="https://aff.yuban.cloud" class="btn" target="_blank">润雨云广告</a>
-              <a href="#" class="btn" target="_blank">更多内容正在接入....</a>
+              <a href="https://cny.yuban.cloud/" class="btn" target="_blank" rel="noopener noreferrer">春节倒计时</a>
+              <a href="https://gk.yuban.cloud/" class="btn" target="_blank" rel="noopener noreferrer">高考倒计时</a>
+              <a href="https://mc.yuban.cloud/" class="btn" target="_blank" rel="noopener noreferrer">Motd查询</a>
+              <a href="https://monitor.yuban.cloud/" class="btn" target="_blank" rel="noopener noreferrer">雨云监控</a>
+              <a href="https://github.com/xiaoyuban1213" class="btn" target="_blank" rel="noopener noreferrer">我的GitHub</a>
+              <a href="https://t.me/Yuban_NetWork" class="btn" target="_blank" rel="noopener noreferrer">telegram频道</a>
+              <a href="https://aff.yuban.cloud/" class="btn" target="_blank" rel="noopener noreferrer">润雨云广告</a>
+              <span class="btn btn-disabled" aria-disabled="true">更多内容正在接入....</span>
             </div>
           </div>
         </div>
@@ -50,8 +79,8 @@
     <div class="copyright-container">
       <div class="wrapper">
         <div class="footer-line">
-          <span class="footer-left">Copyright © 2020-<span id="copyright-year">2025</span> 御坂网络 版权所有</span>
-          <a class="beian-link" href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2025208421号</a>
+          <span class="footer-left">Copyright © 2018-<span id="copyright-year">2025</span> 御坂网络 版权所有</span>
+          <a class="beian-link" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">苏ICP备2025208421号</a>
           <span class="footer-right" id="hitokoto">
             <a href="#" id="hitokoto_text">":D 获取中..."</a>
           </span>
